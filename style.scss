@@ -11,7 +11,7 @@ $fondo-oscuro: #000;
 $texto-oscuro: #fff;
 $enlace-oscuro: #bd93f9;
 $imagen-oscuro: brightness(0.8) contrast(1.2);
-$icono-claro: "🌝";
+$icono-oscuro: "🌝";
 $switch-oscuro: #fce477;
 $switch-texto-oscuro: "light mode?";
 //Modo Predeterminado
@@ -54,4 +54,14 @@ $switch-texto: $switch-texto-claro;
     content: $icono;
     font-size: 40px;
     transition: text-shadow .2s;
+}
+
+.switch-label::after {
+    content: $switch-texto-oscuro;
+    color: $switch;
+}
+
+.switch:focus~#container .switch-label::before,
+.switch-label:hover::before {
+    text-shadow: 0 0 15px $switch-claro;
 }

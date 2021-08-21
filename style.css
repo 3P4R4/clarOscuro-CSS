@@ -26,9 +26,19 @@
 }
 
 .switch-label::before {
-  content: "🌝";
+  content: "🌚";
   font-size: 40px;
   -webkit-transition: text-shadow .2s;
   transition: text-shadow .2s;
+}
+
+.switch-label::after {
+  content: "light mode?";
+  color: #373d4e;
+}
+
+.switch:focus ~ #container .switch-label::before,
+.switch-label:hover::before {
+  text-shadow: 0 0 15px #373d4e;
 }
 /*# sourceMappingURL=style.css.map */
