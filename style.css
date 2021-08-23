@@ -1,20 +1,54 @@
 @charset "UTF-8";
-#container {
-  background: #fff;
-  color: #000;
-  max-width: 960px;
-  margin: 0 auto;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-}
-
+/* #switch {
+    text-shadow: $sombra-claro;
+    content: $icono-claro;
+    color: $texto-claro;
+    background: $fondo-claro;
+    a {
+        color: $enlace-claro;
+    }
+} */
 .switch:checked ~ #container {
   background: #000;
   color: #fff;
+  content: "🌝";
+  text-shadow: #fce477;
 }
 
 .switch:checked ~ #container a {
   color: #bd93f9;
+  font-weight: 900;
+}
+
+.switch:checked ~ #container .switch-label::before {
+  content: "🌚";
+  font-size: 40px;
+  -webkit-transition: text-shadow .2s;
+  transition: text-shadow .2s;
+}
+
+.switch:checked ~ #container .switch-label::after {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  content: "light mode?";
+  font-size: 28px;
+  color: #fff;
+  line-height: 40px;
+  opacity: 0;
+  padding-left: 15px;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.switch:checked ~ #container .switch:focus ~ #container .switch-label::before,
+.switch:checked ~ #container .switch-label:hover::before {
+  text-shadow: 0 0 30px #fce477;
+}
+
+.switch:checked ~ #container .switch:focus ~ #container .switch-label::after,
+.switch:checked ~ #container .switch-label:hover::after {
+  opacity: 1;
 }
 
 .switch {
@@ -25,20 +59,63 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.switch-label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .switch-label::before {
-  content: "🌚";
+  content: "🌝";
   font-size: 40px;
   -webkit-transition: text-shadow .2s;
   transition: text-shadow .2s;
 }
 
 .switch-label::after {
-  content: "light mode?";
-  color: #373d4e;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  content: "dark mode?";
+  font-size: 28px;
+  color: #000;
+  line-height: 40px;
+  opacity: 0;
+  padding-left: 15px;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
 }
 
 .switch:focus ~ #container .switch-label::before,
 .switch-label:hover::before {
-  text-shadow: 0 0 15px #373d4e;
+  text-shadow: 0 0 30px #fce477;
 }
+
+.switch:focus ~ #container .switch-label::after,
+.switch-label:hover::after {
+  opacity: 1;
+}
+
+/***Esto es algo aparte***/
+body {
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  height: 100px;
+}
+
+#contenido {
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+/* .switch #container {
+    background: $fondo-claro;
+    color: $texto-claro;
+    min-height: 100%;
+    transition: color .2s, background-color .2s;
+} */
 /*# sourceMappingURL=style.css.map */

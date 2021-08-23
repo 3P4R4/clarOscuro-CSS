@@ -11,3 +11,5 @@ themeSwitch.addEventListener('change', function(e) {
         localStorage.removeItem('switchTema');
     }
 });
+
+/******************************************************************************/
