@@ -21,7 +21,6 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
     color: $texto-oscuro;
     content: $icono-oscuro;
     text-shadow: $sombra-oscuro;
-    height: 100vh;
     a {
         color: $enlace-oscuro;
         font-weight: 900;
@@ -34,7 +33,7 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
     .switch-label::after {
         align-self: center;
         content: $switch-texto-oscuro;
-        font-size: 28px;
+        font-size: 22px;
         color: $texto-oscuro;
         line-height: 40px;
         opacity: 0;
@@ -49,6 +48,7 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
     .switch-label:hover::after {
         opacity: 1;
     }
+    /********General en modo oscuro*******/
 }
 
 // Aqui es donde sucede la magia
@@ -76,7 +76,7 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
 .switch-label::after {
     align-self: center;
     content: $switch-texto-claro;
-    font-size: 28px;
+    font-size: 20px;
     color: $texto-claro;
     line-height: 40px;
     opacity: 0;
@@ -109,6 +109,7 @@ body {
     max-width: 70%;
     margin: 0 auto;
     padding-top: 5%;
+    padding-bottom: 20%;
 }
 
 
