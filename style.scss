@@ -33,7 +33,7 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
     .switch-label::after {
         align-self: center;
         content: $switch-texto-oscuro;
-        font-size: 22px;
+        font-size: 18px;
         color: $texto-oscuro;
         line-height: 40px;
         opacity: 0;
@@ -76,7 +76,7 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
 .switch-label::after {
     align-self: center;
     content: $switch-texto-claro;
-    font-size: 20px;
+    font-size: 18px;
     color: $texto-claro;
     line-height: 40px;
     opacity: 0;

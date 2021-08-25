@@ -24,7 +24,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   content: "Modo luz?";
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
   line-height: 40px;
   opacity: 0;
@@ -70,7 +70,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   content: "Modo oscuro?";
-  font-size: 20px;
+  font-size: 18px;
   color: #000;
   line-height: 40px;
   opacity: 0;
