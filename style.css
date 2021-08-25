@@ -2,7 +2,7 @@
 .switch:checked ~ #container {
   background: #000;
   color: #fff;
-  content: "🌝";
+  content: "🌞";
   text-shadow: #fce477;
   /********General en modo oscuro*******/
 }
@@ -13,7 +13,7 @@
 }
 
 .switch:checked ~ #container .switch-label::before {
-  content: "🌝";
+  content: "🌞";
   font-size: 40px;
   -webkit-transition: text-shadow .2s;
   transition: text-shadow .2s;
