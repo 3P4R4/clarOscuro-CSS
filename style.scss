@@ -33,7 +33,6 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
     .switch-label::after {
         align-self: center;
         content: $switch-texto-oscuro;
-        font-size: 18px;
         color: $texto-oscuro;
         line-height: 40px;
         opacity: 0;
@@ -76,7 +75,6 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
 .switch-label::after {
     align-self: center;
     content: $switch-texto-claro;
-    font-size: 18px;
     color: $texto-claro;
     line-height: 40px;
     opacity: 0;
@@ -99,7 +97,7 @@ $imagen-oscuro: brightness(0.8) contrast(1.2);
 
 body {
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     padding: 0;
     height: 100px;
